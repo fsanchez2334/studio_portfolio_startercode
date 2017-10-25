@@ -1,8 +1,10 @@
-//Unit 1 Portfolio with Firebase
-// Use Firebase to store the images links and info for your projects. 
-// Use Jquery to dynamically display the information from firebse. 
 
-// *************************** YOUR CODE BELOW *******************************
-//******************TEST EARLY AND OFTEN USING console.log() ******************
-//****************** SERIOUSLY TEST USING console.log()!!! ******************
-
+var config = {
+    apiKey: "AIzaSyD_clrqijvFWnNFsx10HPvml9NX7e8vnw0",
+    authDomain: "myportfolio2017-a5377.firebaseapp.com",
+    databaseURL: "https://myportfolio2017-a5377.firebaseio.com",
+    projectId: "myportfolio2017-a5377",
+    storageBucket: "myportfolio2017-a5377.appspot.com",
+    messagingSenderId: "960447294585"
+  };
+  firebase.initializeApp(config);
