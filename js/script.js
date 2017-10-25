@@ -8,3 +8,23 @@ var config = {
     messagingSenderId: "960447294585"
   };
   firebase.initializeApp(config);
+  
+
+
+var firstName= firebase.database().ref('fname');
+firstName.on('value', function(snapshot) {
+    var name=snapshot.val();
+    $(".FirstName").html(name);
+    console.log(snapshot.val());
+
+});
+
+
+var secondName=firebase.database().ref('lname');
+secondName.on('value',function(snapshot){
+    var name=snapshot.val();
+    $(".LastName").html(name);
+    console.log(snapshot.val());
+});
+
+var containfo=firebase.database().ref()
