@@ -1,42 +1,33 @@
-<!-- 
-        1.1 Wireframe your project
-        1.2 Fork and clone the repo and set up your project workspace
-        2.1 Link your files in the head of the docment Add a Nav Bar to your site - It should have three links (Portfolio, About, and Contact) 
-        2.2 Add a div for each section. Within section add a contatiner div with the appropriate number of rows and columns 
-        3.1 Add thumbnails and other custom component (button, modal, font) using bootstrap Documentation 
-        3.2 Add CSS and add your site to gh-pages 
--->
-
 <!DOCTYPE html>
-<head>  
-    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <link rel="stylesheet" href="./style.css" type="text/css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-<meta charset="utf-8">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  
-  
+  <!--<link rel="icon" href="images/favicon.ico">-->
+
+  <title>Your Portfolio Site</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
-    
-<div class="container">
-    <center><div class="header">
+
+  <div class="container">
+    <div class="header">
       <ul class="nav nav-pills pull-right">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <h3 class="FirstName"></h3>
-      <h3 class="LastName"></h3>
+      <h3 class="text-muted">Fernando Sanchez</h3>
     </div>
 
     <div class="jumbotron">
@@ -45,59 +36,45 @@
       <p class="lead">Front End Developer</p>
       <p><a class="btn btn-lg btn-success" href="mailto:" target="_top" role="button">Message</a></p>
     </div>
-  </center>
-</div>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <div class="addthis_custom_follow"></div>
 
-
-
- <div class="row marketing">
-      <center><h2>Calculator Project</h2></center>
-      <div class="col-xs-12 col-md-6">
-        <div class="project-btns">
-          <a class="col-xs-6 btn btn-default" href="https://cdn.rawgit.com/Sheng0o0/new-calculator/master/index.html" role="button">Preview</a>
-          <a class="col-xs-6 btn btn-default" href="https://github.com/Sheng0o0/new-calculator" role="button">Code</a>
     
-<div class="row marketing">
-  <center><h2>Writing Project</h2></center>
-   <a class="col-xs-6 btn btn-default" href="https://fsanchez2334.github.io/philosophy-other-writings/" role="button">Preview</a>
+      
+<!-- Project 4 -->
+<div class="col-xs-12 col-md-6">
+  <div class="Project-phil">
+    <h2>Philosophy Writing Project</h2>
+    <a class="col-xs-6 btn btn-default" href="https://fsanchez2334.github.io/philosophy-other-writings/" role="button">Preview</a>
     <a class="col-xs-6 btn btn-default" href="https://github.com/fsanchez2334/philosophy-other-writings" role ="button">Code</a>
+  </div>
   </div>
 <div id="Phil">
   <img class="img-responsive" src="http://cdn.wallpapersafari.com/73/50/cyV4Pu.jpg" height="320" width="420">
 </div>
 </div><!-- /container -->
 
+<!-- Project 5 -->
 <div class="col-xs-12 col-md-6">
-<div class="row marketing">
   <div class="Bootstrap-re-design">
-   <center><h2>School Website Re-design Bootstrap</h2></center>
+    <h2>School Website Re-design Bootstrap</h2>
     <a class="col-xs-6 btn btn-default" href="https://fsanchez2334.github.io/cristorey-bootstrap/" role="button">Preview</a>
     <a class="col-xs-6 btn btn-default" href="https://github.com/fsanchez2334/cristorey-bootstrap" role="button">Code</a>
   </div>
-</div>
+</div><!-- /container -->
 
- <div class="col-xs-12 col-md-6">
-  <div class="role marketing">
+<!--Project 6-->
+<div class="col-xs-12 col-md-6">
   <div class="FourSquare Project">
-    <center><h2>Restaurant App Project</h2></center>
-    <a class  ="col-xs-6 btn btn-default" href="https://fsanchez2334.github.io/FoursquareFoodSearch/" role="button">Preview</a>
+    <h2>Restaurant App Project</h2>
+    <a class="col-xs-6 btn btn-default" href="https://fsanchez2334.github.io/FoursquareFoodSearch/" role="button">Preview</a>
     <a class="col-xs-6 btn btn-default" href="https://github.com/fsanchez2334/FoursquareFoodSearch.git" role="button">Code</a>
   </div>
 </div>
-
- <div class="col-xs-12 col-md-6">
-     <div class="project-heroic-villains">
-       <center><h2>My Heroes and Villains Project</h2></center>
-       <a class="col-xs-6 btn btn-default" href="https://fsanchez2334.github.io/heroesandvillains/" role="button">Preview</a>
-       <a class="col-xs-6 btn btn-default" href="https://github.com/fsanchez2334/heroesandvillains" role="button">Code</a>
-      </div>
-      <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Justice_League_-_The_New_52_(Jim_Lee's_art).png/250px-Justice_League_-_The_New_52_(Jim_Lee's_art).png">
-      </div><!-- /container -->
-      
-<div class="testing-space">
-    
-</div>
-
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script>
 </body>
-
 </html>
